@@ -2,7 +2,7 @@
 
 ## API Practice
 
-### Fetching data from [Weather API](https://weatherapi.com)
+### Fetching data from [Weather API](https://www.weatherapi.com)
 
 ## Preview
 
@@ -12,7 +12,7 @@
 
 ### Place your own API key inside script.js to use
 
-- Displaying data served from [Weather API](https://weatherapi.com)
+- Displaying data served from [Weather API](https:www.//weatherapi.com)
 - The page background color depends on the searched country/city time (light when day time, dark when night time)
 
 ## To-Do
