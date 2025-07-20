@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather Right Now</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Weather Right Now</h1>
+      <div class="container">
+        <div class="search-container">
+          <input type="text" name="search-box" id="searchBox" value="" placeholder="Search country or city..." autocomplete="off" />
+          <button type="submit" id="searchBtn">Search</button>
+        </div>
+        <div class="location-info">
+          <p id="country"></p>
+          <p id="city"></p>
+          <p id="localTime"></p>
+        </div>
+        <div class="current-info">
+          <h2>Details</h2>
+          <div class="current-temp">
+            <h4>Temperature</h4>
+            <p id="temp"></p>
+            <h4>Feels like</h4>
+            <p id="feelsLike"></p>
+          </div>
+          <br />
+          <div class="condition">
+            <p id="cloudCondition"></p>
+            <img src="" alt="" id="conditionImg" />
+          </div>
+          <div class="humidityAndWind">
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+          </div>
+        </div>
+        <p id="lastUpdatedTime"></p>
+      </div>
+      <div class="footer">Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.8s ease-in-out;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffbfa;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  height: 100vh;
+}
+
+.container {
+  transition: 1s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: #54defd;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-width: 30vw;
+  max-width: 50vw;
+  box-shadow: 3px 3px 5px #232c33d5;
+  color: #fffbfa;
+  height: auto;
+  margin: auto;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+#searchBox {
+  flex-grow: 2;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 3px 3px 5px #232c33d5;
+}
+
+button {
+  transition: 0s;
+  width: 5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  background-color: #303432;
+  color: #fffbfa;
+  box-shadow: 3px 3px 5px #232c33d5;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3a3e3c;
+}
+button:active {
+  background-color: #3d4240;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #232c33;
+  box-shadow: 3px 3px 5px #232c33d5;
+  border-radius: 10px;
+  padding: 0.5rem;
+  gap: 10px;
+}
+.current-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #232c33;
+  box-shadow: 3px 3px 5px #232c33d5;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+#lastUpdatedTime {
+  align-self: flex-end;
+  font-family: monospace;
+  color: #000000;
+  text-shadow: 3px 3px 5px #232c33;
+}
+
+.footer {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+  background-color: #54defd;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #232c33d5;
+}
+
+.footer a {
+  transition: 0s;
+  text-decoration: none;
+  color: #fffbfa;
+  text-shadow: 1px 1px 1px #232c33;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #ddd9d8;
+  text-shadow: 1px 1px 1px #232c33;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    max-width: 80vw;
+    min-width: 80vw;
+  }
+}
